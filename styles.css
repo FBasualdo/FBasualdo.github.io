@@ -133,6 +133,7 @@ height: 200px;
 
 .projects{
 background-image: url("images/projects-Background.png");
+background-size: cover;
 position: relative;
 flex-direction: column;
 align-items: center;
