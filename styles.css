@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background: #eee;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .presentation{
@@ -103,13 +103,16 @@ h3{
   justify-content: space-evenly;
 }
 
-
 .text{
 text-align:left;
 color: #1A374D;
 max-width: 50%;
 font-size: 20px;
 
+}
+
+.text-container p{
+  font-size: 18px;
 }
 
 .sections p{
