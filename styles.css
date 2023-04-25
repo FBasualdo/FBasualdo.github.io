@@ -266,3 +266,42 @@ padding: 40px 0;
  max-width: 100px;
  margin: 40px;
 }
+
+@media screen and (max-width: 980px) {
+  body{
+    font-style:italic;
+  }
+  .sections{
+    flex-direction: column;
+  }
+  .text{
+    max-width: 90vw;
+  }
+  #learning{
+    padding-top: 40px;
+  }
+ 
+  .project-div{
+    flex-direction: column;
+    margin: 10px;
+    width: 90vw;
+  }
+  .project-div img{
+    width: calc(var(--projects-original-width)/ 2.5);
+  }
+  .project-div .text-container{
+    width: 100%;
+  }
+  .programming-skill-show{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .another-skills{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .buttons-contact img{
+    margin: 10px;
+    width: 20;
+  }
+}
