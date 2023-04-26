@@ -276,13 +276,17 @@ padding: 40px 0;
     padding-top: 40px;
   }
  
+
+  .projects{
+    background:#6998AB;
+  }
   .project-div{
     flex-direction: column;
     margin: 10px;
-    width: 90vw;
+    width: 80vw;
   }
-  .project-div img{
-    width: calc(var(--projects-original-width)/ 2.5);
+  .logo{
+    width: calc(var(--projects-original-width)/ 2);
   }
   .project-div .text-container{
     width: 100%;
