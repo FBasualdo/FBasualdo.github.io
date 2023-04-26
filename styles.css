@@ -268,9 +268,7 @@ padding: 40px 0;
 }
 
 @media screen and (max-width: 980px) {
-  .sections{
-    flex-direction: column;
-  }
+  
   .text{
     max-width: 90vw;
   }
@@ -292,13 +290,23 @@ padding: 40px 0;
   .programming-skill-show{
     flex-wrap: wrap;
     justify-content: center;
-  }
+    max-width: 100vw;
+  } 
   .another-skills{
     flex-wrap: wrap;
     justify-content: center;
   }
   .buttons-contact img{
     margin: 10px;
-    width: 20vw;
+    width: 15vw;
   }
-}
+  .skill-box{
+    width: 25%;
+    margin: 5vw;
+  }
+  .skill-box img{
+    width:100%;
+  }
+}.sections{
+    flex-direction: column;
+  }
