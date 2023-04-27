@@ -304,7 +304,7 @@ padding: 40px 0;
   }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:500px){
   .skill-box{
     width: 25%;
     margin: 5vw;
