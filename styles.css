@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background: #eee;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu';
 }
 
 .presentation{
@@ -41,10 +41,8 @@ body {
 }
 
 #navbar {
-  overflow: hidden;
   display: flex;
   list-style: none;
-  justify-content: space-around;
   height: 50px;
   margin: 0;
   padding: 0;
@@ -103,16 +101,13 @@ h3{
   justify-content: space-evenly;
 }
 
+
 .text{
 text-align:left;
 color: #1A374D;
 max-width: 50%;
 font-size: 20px;
 
-}
-
-.text-container p{
-  font-size: 18px;
 }
 
 .sections p{
@@ -161,6 +156,10 @@ margin: 20px;
   width: var(--max-width);
 }
 
+.text-container p{
+  font-size: 18px;
+}
+
 .logo{
 position: relative;
 width: calc(var(--projects-original-width)/ 4);
@@ -174,10 +173,6 @@ padding: 40px 0;
   font-size: 45px;
   background-color: #6998AB;
   padding: 10px;
-}
-
-.projects h4{
-  font-size: 20px;
 }
 
 .skills h3{  
@@ -200,6 +195,9 @@ padding: 40px 0;
   margin-bottom: 20px;
   display: flex;
   border-bottom:3px solid #B1D0E0;
+  flex-direction: row;
+  justify-content: space-evenly;
+
 }
 
 .programming-skill-show h4{
@@ -211,6 +209,8 @@ padding: 40px 0;
   padding: 20px 20px 0 20px;
   margin: 30px;
   border-radius: 5px;
+  width: 100px; /*AGREGAR*/
+  text-align: center;
 }
 
 .skill-box img{
@@ -223,17 +223,12 @@ padding: 40px 0;
   font-size: 16px;
 }
 
-.skill-box{
-  background-color: #B1D0E0;
-  padding: 20px 20px 0 20px;
-  margin: 30px;
-  border-radius: 5px;
-}
-
 .another-skills{  
   margin-bottom: 20px;
   display: flex;
-  border-bottom:3px solid #B1D0E0;}
+  border-bottom:3px solid #B1D0E0;
+  justify-content: space-evenly;
+}
 
 .languages ul{
   padding: 0;
@@ -304,13 +299,17 @@ padding: 40px 0;
     margin: 10px;
     width: 15vw;
   }
+  .sections{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:600px){
   .skill-box{
     width: 25%;
     margin: 5vw;
   }
   .skill-box img{
     width:100%;
-  }
-}.sections{
-    flex-direction: column;
-  }
+  }  
+}
